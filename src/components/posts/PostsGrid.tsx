@@ -1,10 +1,11 @@
 import { Box } from "@mui/material";
 import PostItem from "./PostItem";
 import { v4 as uuidv4 } from "uuid";
+import { PostDataProps } from "@/pages/posts/utils";
 
-const PostsGrid: React.FC<{ posts: any }> = ({ posts }) => (
+const PostsGrid: React.FC<{ posts: PostDataProps[] }> = ({ posts }) => (
   <Box sx={gridStyles}>
-    {posts.map((post: any) => (
+    {posts.map((post: PostDataProps) => (
       <PostItem key={uuidv4() as string} post={post} />
     ))}
   </Box>

@@ -2,9 +2,9 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-interface PostDataProps {
+export interface PostDataProps {
   isFeatured?: boolean;
-  date?: any;
+  date: Date;
   content: string;
   slug: string;
 }
@@ -20,9 +20,10 @@ export const getPostData = (postIdentifier: string): PostDataProps => {
   const { data, content } = matter(fileContent);
 
   return {
-    slug: postSlug,
     ...data,
+    slug: postSlug,
     content,
+    date: data?.date
   };
 };
 
