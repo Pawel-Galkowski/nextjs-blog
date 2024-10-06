@@ -3,7 +3,7 @@ import Head from "next/head";
 import ContactForm from "@/components/ContactForm"; 
 import { Box } from "@mui/material";
 
-export default () => (
+const ContactPage = () => (
   <Box sx={{ height: '100vh' }}>
     <Head>
       <title>Contact Me</title>
@@ -12,3 +12,5 @@ export default () => (
     <ContactForm />
   </Box>
 );;
+
+export default ContactPage

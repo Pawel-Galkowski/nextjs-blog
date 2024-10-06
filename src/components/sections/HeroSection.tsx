@@ -6,13 +6,13 @@ const HeroSection = () => (
     <Box sx={imageStyles}>
       <Image
         src="/images/site/pawel.png"
-        alt="Pawel's image"
+        alt="Pawel&apos;s image"
         width={300}
         height={300}
       />
     </Box>
     <Box sx={{ display: "flex", flexDirection: "column" }}>
-      <Typography variant="h2">Hi, I'm Pawel</Typography>
+      <Typography variant="h2">Hi, I&apos;m Pawel</Typography>
       <Typography variant="body2">
         Example blog about web development - especially React.
       </Typography>

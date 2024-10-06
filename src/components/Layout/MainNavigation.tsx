@@ -23,11 +23,11 @@ export default function MainNavigation() {
 
   const onMenuClose = useCallback(() => {
     setIsMobileMenuOpen(false);
-  }, [isMobileMenuOpen]);
+  }, []);
 
   const onMenuOpen = useCallback(() => {
     setIsMobileMenuOpen(true);
-  }, [isMobileMenuOpen]);
+  }, []);
 
   const MenuLinks = () => (
     <>
